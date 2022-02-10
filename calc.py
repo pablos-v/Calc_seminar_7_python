@@ -1,5 +1,2 @@
-def calc():
-    print('Введите выражение для вычисления:')
-    c = eval(input())
-    return c
-print(calc())
+def calc(input):
+    return eval(input)

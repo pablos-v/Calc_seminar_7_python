@@ -7,6 +7,6 @@ def init(a, b):
     x = complex(a)
     y = complex(b)
 
-def compl():
+def compl(input):
     return x + y
 

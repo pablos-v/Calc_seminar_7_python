@@ -1,12 +1,14 @@
 import comlex
 import calc
 import ui
+import spy
 
 
 def controller():
-    inp = ui.inp() # TODO разнести ипут для компл и для рац калькул.
-    if ui.check(inp): # выод 1 или 0 j
+    inp = ui.inp()
+    if ui.check(inp): 
         res = comlex.compl(inp)
     else:
         res = calc.calc(inp)
+    spy.my_logger(inp,res)
     ui.output(res)
